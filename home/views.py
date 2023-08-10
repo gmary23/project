@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 #from django.shortcuts import render
 
-# Create your views here.
+# Criando sua view aqui.
 def home(request):
     print('home')
-    return HttpResponse('home do app') # página principal
+    return HttpResponse('home do app Geila') # página principal
