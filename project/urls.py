@@ -12,7 +12,7 @@
 #    return HttpResponse('Uma mensagem para alguém especial') #aqui o servidor responde
 
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path # include é para incluir um arquivo de url 
 
 urlpatterns = [
     path('', include('home.urls')), # importa o arquivo URL DA HOME para isso usa o include.

@@ -1,15 +1,18 @@
-from django.shortcuts import HttpResponse
-# from django.shortcuts import render
+from django.shortcuts import render
 
 # Create your views here.
 def blog(request):
     print('blog')
-    return HttpResponse('blog do app - testando')
+    return render(
+        request,
+        'blog/index.html' # manda renderizar o arquivo que está dentro do templates
+        ) 
+
 
 def exemplo(request):
-    print('exemplo')
-    return HttpResponse('exemplo- testando')
+    print('Exemplo do blog')
+    return render(
+        request,
+        'blog/exemplo.html' # manda renderizar o arquivo que está dentro do templates
+        ) 
 
-def geila(request):
-    print('testando uma view')
-    return HttpResponse('Uhuuuuummm..deu certo')
